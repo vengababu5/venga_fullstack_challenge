@@ -1,0 +1,22 @@
+.article {
+    width: 100%;
+    margin: 5px auto;
+}
+
+.article a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    padding: 5px 0;
+}
+
+.article a .card-header {
+   margin: -13px 0 0 0;
+}
+
+.article:hover {
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 1px 4px 10px grey;
+}

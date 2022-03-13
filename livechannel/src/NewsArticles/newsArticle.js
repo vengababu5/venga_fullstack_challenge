@@ -33,7 +33,6 @@ const NewsArticles = () => {
     //filter article data
     const filterArticlesData = (query) => {
         axios.get(`http://localhost:3002/filterarticle?q=${query}`).then(value => {
-        console.log(value.data); 
             if (value?.data.length > 0) {
                 let data = value.data.map(article => {
                     return { ...article, name: article.author };

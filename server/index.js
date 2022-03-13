@@ -35,9 +35,7 @@ app.get('/getnews', async (req, res) => {
 
 //filtering articles api
 app.get('/filterarticle', async (req, res) => {
-    console.log(req.query.q);
     let filterarticleAarticles = await getFilterArticles(req.query.q);
-    console.log(filterarticleAarticles);
     res.send(JSON.stringify(filterarticleAarticles.data.articles));
 })
 
